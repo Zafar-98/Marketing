@@ -1,0 +1,306 @@
+@import url(fonts.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik";
+}
+
+*::-webkit-scrollbar {
+    width: 5px;
+    background: #fff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #3FA5D5;
+    border-radius: 15px;
+}
+
+*::selection {
+    color: #fff;
+    background: #3FA5D5;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background: #f1f1f1;
+}
+
+.btn {
+    max-width: 210px;
+    width: 100%;
+    padding: 7px 0;
+    text-align: center;
+    background: #3FA5D5;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    color: #fff;
+    transition: .4s;
+}
+
+.btn:hover {
+    background: #2A86B1;
+}
+
+/* header start */
+
+.header {
+    padding: 30px 0;
+}
+
+.header__content {
+    min-height: 500px;
+    background: url(../img/bg.png) rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 62px;
+    row-gap: 25px;
+}
+
+.header__title {
+    font-size: 50px;
+    color: #464748;
+    max-width: 332px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.header__title::before {
+    content: '';
+    width: 107px;
+    height: 55px;
+    background: #3FA5D5;
+    position: absolute;
+    top: 31px;
+    z-index: -1;
+}
+
+.header__txt {
+    color: #696868;
+    text-align: justify;
+    max-width: 314px;
+    width: 100%;
+}
+
+/* header end */
+
+/* skills start */
+
+.skills__cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skills__card {
+    max-width: 255px;
+    width: 100%;
+    background: #fff;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 0 20px;
+    text-align: center;
+}
+
+.skills__card-title {
+    font-size: 20px;
+    color: #2A86B1;
+    margin-bottom: 60px;
+}
+
+.skills__card-icon {
+    color: #3FA5D5;
+    margin-bottom: 70px;
+}
+
+/* skills end */
+
+/* info start */
+
+.info {
+    padding: 48px 0 29px;
+}
+
+.info__desc {
+    max-width: 825px;
+    width: 100%;
+}
+
+.info__title {
+    color: #686868;
+    font-size: 20px;
+    margin: 0 0 22px 20px;
+}
+
+.info__desc-txt {
+    color: #545454;
+    text-align: justify;
+    padding: 15px;
+    border-radius: 8px;
+    background: #fff;
+    margin-bottom: 15px;
+}
+
+.info__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.info__news {
+    max-width: 255px;
+    width: 100%;
+}
+
+.info__new {
+    padding: 15px;
+    border-radius: 8px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    margin-bottom: 15px;
+}
+
+.info__new-img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.info__new-title {
+    font-size: 17px;
+    font-weight: 400;
+    color: #323232;
+    margin-bottom: 5px;
+}
+
+.info__new-txt {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 94.5%;
+    color: #000;
+}
+
+/* info end */
+
+/* footer start */
+
+.footer {
+    background: #3FA5D5;
+    padding: 40px 0;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__title {
+    font-size: 50px;
+    color: #fff;
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: flex-end;
+}
+
+.footer__links a {
+    color: #fff;
+}
+
+.footer__phone {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/* footer end */
+
+/* aside start */
+
+.aside {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    height: 100%;
+    width: 100px;
+    overflow-x: hidden;
+    transition: 0.4s;
+}
+
+.aside:hover {
+    width: 234px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 30px 0;
+}
+
+.nav__logo {
+    padding-left: 20px;
+}
+
+.nav__list {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 55px;
+    width: max-content;
+}
+
+.nav__link {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    color: #939393;
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+.nav__link:hover {
+    color: #2A86B1;
+}
+
+.nav__link-icon {
+    width: 40px;
+}
+
+.nav__ava {
+    margin-left: 15px;
+    width: 70px;
+    height: 70px;
+}
+
+/* aside end */
